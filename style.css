@@ -1,5 +1,43 @@
-img {
-	width: 95%;
-	height: auto;
-	margin: auto;
-	}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive; /* Still going strong with the Comic Sans! */
+    text-align: center;
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff); /* Rainbow gradient! */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-background {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central-image {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white */
+    padding: 30px;
+    border: 7px dashed #000; /* Even thicker dashed border! */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 80%;
+}
+
+.central-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 5px dotted #f0f; /* Even more pink! */
+}
